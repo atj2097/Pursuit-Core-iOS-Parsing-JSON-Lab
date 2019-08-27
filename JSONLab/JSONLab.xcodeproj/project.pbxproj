@@ -14,6 +14,14 @@
 		CB4851712315B67B001C3F52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB48516F2315B67B001C3F52 /* LaunchScreen.storyboard */; };
 		CB48517C2315B67B001C3F52 /* JSONLabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB48517B2315B67B001C3F52 /* JSONLabTests.swift */; };
 		CB4851872315B67B001C3F52 /* JSONLabUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4851862315B67B001C3F52 /* JSONLabUITests.swift */; };
+		CBD60E982315C05D006F3A41 /* weather.json in Resources */ = {isa = PBXBuildFile; fileRef = CBD60E972315C05D006F3A41 /* weather.json */; };
+		CBD60E9A2315C258006F3A41 /* colors.json in Resources */ = {isa = PBXBuildFile; fileRef = CBD60E992315C257006F3A41 /* colors.json */; };
+		CBD60E9C2315C3CC006F3A41 /* randomUsers.json in Resources */ = {isa = PBXBuildFile; fileRef = CBD60E9B2315C3CC006F3A41 /* randomUsers.json */; };
+		CBD60E9F2315C8C3006F3A41 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD60E9E2315C8C3006F3A41 /* Colors.swift */; };
+		CBD60EA12315D000006F3A41 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD60EA02315D000006F3A41 /* Weather.swift */; };
+		CBD60EA32315D54F006F3A41 /* randomUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD60EA22315D54F006F3A41 /* randomUsers.swift */; };
+		CBD60EA82315DF67006F3A41 /* ColorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD60EA72315DF67006F3A41 /* ColorController.swift */; };
+		CBD60EAA2315E387006F3A41 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD60EA92315E387006F3A41 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +55,14 @@
 		CB4851822315B67B001C3F52 /* JSONLabUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSONLabUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB4851862315B67B001C3F52 /* JSONLabUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONLabUITests.swift; sourceTree = "<group>"; };
 		CB4851882315B67B001C3F52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBD60E972315C05D006F3A41 /* weather.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = weather.json; sourceTree = "<group>"; };
+		CBD60E992315C257006F3A41 /* colors.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = colors.json; sourceTree = "<group>"; };
+		CBD60E9B2315C3CC006F3A41 /* randomUsers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = randomUsers.json; sourceTree = "<group>"; };
+		CBD60E9E2315C8C3006F3A41 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		CBD60EA02315D000006F3A41 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		CBD60EA22315D54F006F3A41 /* randomUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = randomUsers.swift; sourceTree = "<group>"; };
+		CBD60EA72315DF67006F3A41 /* ColorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorController.swift; sourceTree = "<group>"; };
+		CBD60EA92315E387006F3A41 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +113,13 @@
 		CB4851652315B678001C3F52 /* JSONLab */ = {
 			isa = PBXGroup;
 			children = (
+				CBD60EA42315D609006F3A41 /* Models */,
+				CBD60E9D2315C86A006F3A41 /* data */,
 				CB4851662315B678001C3F52 /* AppDelegate.swift */,
 				CB4851682315B678001C3F52 /* ViewController.swift */,
 				CB48516A2315B678001C3F52 /* Main.storyboard */,
+				CBD60EA92315E387006F3A41 /* User.swift */,
+				CBD60EA72315DF67006F3A41 /* ColorController.swift */,
 				CB48516D2315B67B001C3F52 /* Assets.xcassets */,
 				CB48516F2315B67B001C3F52 /* LaunchScreen.storyboard */,
 				CB4851722315B67B001C3F52 /* Info.plist */,
@@ -123,6 +143,26 @@
 				CB4851882315B67B001C3F52 /* Info.plist */,
 			);
 			path = JSONLabUITests;
+			sourceTree = "<group>";
+		};
+		CBD60E9D2315C86A006F3A41 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				CBD60E9B2315C3CC006F3A41 /* randomUsers.json */,
+				CBD60E992315C257006F3A41 /* colors.json */,
+				CBD60E972315C05D006F3A41 /* weather.json */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		CBD60EA42315D609006F3A41 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CBD60E9E2315C8C3006F3A41 /* Colors.swift */,
+				CBD60EA22315D54F006F3A41 /* randomUsers.swift */,
+				CBD60EA02315D000006F3A41 /* Weather.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,9 +269,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBD60E982315C05D006F3A41 /* weather.json in Resources */,
+				CBD60E9A2315C258006F3A41 /* colors.json in Resources */,
 				CB4851712315B67B001C3F52 /* LaunchScreen.storyboard in Resources */,
 				CB48516E2315B67B001C3F52 /* Assets.xcassets in Resources */,
 				CB48516C2315B678001C3F52 /* Main.storyboard in Resources */,
+				CBD60E9C2315C3CC006F3A41 /* randomUsers.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +299,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBD60EA12315D000006F3A41 /* Weather.swift in Sources */,
+				CBD60EA82315DF67006F3A41 /* ColorController.swift in Sources */,
+				CBD60EA32315D54F006F3A41 /* randomUsers.swift in Sources */,
 				CB4851692315B678001C3F52 /* ViewController.swift in Sources */,
+				CBD60E9F2315C8C3006F3A41 /* Colors.swift in Sources */,
 				CB4851672315B678001C3F52 /* AppDelegate.swift in Sources */,
+				CBD60EAA2315E387006F3A41 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
